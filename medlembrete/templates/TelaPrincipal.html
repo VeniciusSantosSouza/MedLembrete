@@ -13,10 +13,24 @@
     <form>
         <h2>MedLembrete</h2>
 
+        <fieldset>
+            <legend>
+                <strong>Dados Da Enfermeira</strong>
+            </legend><br><br>
+
         <div class="form-group">
-            <label for="enfermeira">Nome da Enfermeira</label>
-            <input type="text" id="enfermeira" name="enfermeira" required>
+            <label for="nome_enfermeira">Nome da Enfermeira</label>
+            <input type="text" id="nome_enfermeira" name="nome_enfermeira" required><br><br>
+
+            <label for="email_enfermeira">Email</label>
+            <input type="email" id="email_enfermeira" name="email_enfermeira">
         </div>
+        </fieldset><br><br>
+        
+        <fieldset>
+            <legend>
+                <strong>Dados Do Paciente</strong>
+            </legend><br>
 
         <div class="form-group">
             <label for="nome_do_paciente">Nome do Paciente</label>
@@ -29,13 +43,13 @@
         </div>
 
         <div class="form-group">
-            <label for="medicamento">Nome do Medicamento</label>
-            <input type="text" id="medicamento" name="medicamento" required>
+            <label for="medicamento_paciente">Nome do Medicamento</label>
+            <input type="text" id="medicamento_paciente" name="medicamento_paciente" required>
         </div>
 
         <div class="form-group">
-            <label for="via">Via de Administração</label>
-            <select id="via" name="via">
+            <label for="via_paciente">Via de Administração</label>
+            <select id="via_paciente" name="via_paciente">
                 <option>Oral</option>
                 <option>Intravenosa</option>
                 <option>Intramuscular</option>
@@ -44,8 +58,8 @@
         </div>
 
         <div class="form-group">
-            <label for="dose_unidade">Unidade da Dose</label>
-            <select id="dose_unidade" name="dose_unidade">
+            <label for="dose_unidade_paciente">Unidade da Dose</label>
+            <select id="dose_unidade_paciente" name="dose_unidade_paciente">
                 <option>mg</option>
                 <option>ml</option>
                 <option>comprimido(s)</option>
@@ -54,27 +68,30 @@
         </div>
 
         <div class="form-group">
-            <label for="frequencia">Frequência</label>
-            <input type="text" id="frequencia" name="frequencia" placeholder="Ex: a cada 8h" required>
+            <label for="frequencia_paciente">Frequência</label>
+            <input type="text" id="frequencia_paciente" name="frequencia_paciente" placeholder="Ex: a cada 8h" required>
         </div>
 
         <div class="form-group">
-            <label for="inicio">Data de Início</label>
-            <input type="date" id="inicio" name="inicio">
+            <label for="data_paciente">Data de Início</label>
+            <input type="date" id="data_paciente" name="data_paciente">
         </div>
 
         <div class="form-group">
-            <label for="horario">Horário</label>
-            <input type="time" id="horario" name="horario" required>
+            <label for="horario_paciente">Horário</label>
+            <input type="time" id="horario_paciente" name="horario_paciente" required>
         </div>
 
         <div class="form-group">
-            <label for="observacoes">Observações</label>
-            <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+            <label for="observacoes_paciente">Observações</label>
+            <textarea id="observacoes_paciente" name="observacoes_paciente" rows="3"></textarea>
         </div>
+        </fieldset><br><br>
 
         <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
     </form>
+    
 </body>
 
 </html>
